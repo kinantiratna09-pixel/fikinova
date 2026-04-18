@@ -1,0 +1,190 @@
+:root {
+    --bg: #1B263B;
+    --surface: #162139;
+    --primary: #5FA8D3;
+    --secondary: #A9D6E5;
+    --light: #FFFFFF;
+    --muted: #D9D9D9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(180deg, #1B263B 0%, #162139 100%);
+    color: var(--light);
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+}
+
+.sign-up-shell {
+    width: min(1000px, 100%);
+    max-width: 980px;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.sign-up-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.maskot-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.sign-up-panel {
+    width: 100%;
+    max-width: 560px;
+}
+
+.sign-up-panel {
+    flex: 1;
+    padding: 2.5rem;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.22);
+}
+
+.sign-up-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.sign-up-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.sign-up-header p {
+    margin: 0.55rem 0 0;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.sign-up-form {
+    display: grid;
+    gap: 1.2rem;
+}
+
+label {
+    display: grid;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+input {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--light);
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgba(95, 168, 211, 0.9);
+    box-shadow: 0 0 0 4px rgba(95, 168, 211, 0.12);
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 16px;
+    border: none;
+    background: var(--primary);
+    color: var(--bg);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background: #4A9AC7;
+    transform: translateY(-1px);
+}
+
+.button-primary {
+    width: 100%;
+    padding: 1rem;
+}
+
+.sign-up-note {
+    margin: 1.5rem 0 0;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+}
+
+.sign-up-note a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.sign-up-note a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1.5rem;
+    }
+
+    .sign-up-shell {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sign-up-left,
+    .sign-up-panel {
+        width: 100%;
+    }
+
+    .sign-up-left {
+        order: 2;
+        padding: 0;
+        margin-top: 1.5rem;
+    }
+
+    .sign-up-panel {
+        order: 1;
+    }
+
+    .sign-up-header h1 {
+        font-size: 1.65rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+
+    .sign-up-panel {
+        padding: 1.8rem;
+    }
+
+    .sign-up-form {
+        gap: 1rem;
+    }
+}
+</content>
+<parameter name="filePath">e:\FIKSI\css\sing_up.css

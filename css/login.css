@@ -1,0 +1,204 @@
+:root {
+    --bg: #1B263B;
+    --surface: #162139;
+    --primary: #5FA8D3;
+    --secondary: #A9D6E5;
+    --light: #FFFFFF;
+    --muted: #D9D9D9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(180deg, #2A3B5A 0%, #1E2A47 100%);
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.login-shell {
+    width: min(1000px, 100%);
+    max-width: 980px;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.login-left {
+    flex: 1;
+}
+
+.login-panel {
+    width: 100%;
+    max-width: 560px;
+}
+
+.login-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.maskot-image {
+    width: auto;
+    height: auto;
+    border-radius: 16px;
+}
+
+.login-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maskot-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.login-panel {
+    padding: 2.5rem;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.22);
+}
+
+.login-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.login-header span {
+    display: inline-flex;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background: var(--primary);
+    color: var(--bg);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.login-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.login-header p {
+    margin: 0.55rem 0 0;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.login-form {
+    display: grid;
+    gap: 1.2rem;
+}
+
+label {
+    display: grid;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+input {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--light);
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgba(95, 168, 211, 0.9);
+    box-shadow: 0 0 0 4px rgba(95, 168, 211, 0.12);
+}
+
+button.button-primary {
+    width: 100%;
+    padding: 1rem;
+}
+
+.login-note {
+    margin: 1.5rem 0 0;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+}
+
+.login-note a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.login-note a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1.5rem;
+    }
+
+    .login-shell {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .login-left,
+    .login-right,
+    .login-panel {
+        width: 100%;
+    }
+
+    .login-right {
+        order: 2;
+        margin-top: 1.5rem;
+        padding: 0;
+    }
+
+    .login-header {
+        grid-template-columns: 1fr;
+    }
+
+    .login-header h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+
+    .login-panel {
+        padding: 1.8rem;
+    }
+
+    .login-header h1 {
+        font-size: 1.45rem;
+    }
+
+    .login-form {
+        gap: 1rem;
+    }
+}

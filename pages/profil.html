@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Quiz Kesiapan Kerja</title>
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/profil.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <img src="../img/logo.png" alt="FIKINOVA Logo" class="brand-logo">
+            <div>
+                <h1>FIKINOVA</h1>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="../index.html" data-page="beranda"><span class="menu-icon">🏠</span> Beranda</a></li>
+                <li><a href="tentang.html" data-page="tentang"><span class="menu-icon">ℹ️</span> Tentang</a></li>
+                <li><a href="materi.html" data-page="materi"><span class="menu-icon">📚</span> Materi</a></li>
+                <li><a href="game.html" data-page="game"><span class="menu-icon">🎮</span> Game</a></li>
+                <li><a href="profil.html" data-page="profil"><span class="menu-icon">👤</span> Profil</a></li>
+                <li><a href="bantuan.html" data-page="bantuan"><span class="menu-icon">❓</span> Bantuan</a></li>
+            </ul>
+        </nav>
+        <button id="logoutButton" class="button button-primary">Logout</button>
+        <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="menu-overlay"></div>
+
+    <main>
+        <section class="profile-section">
+            <div class="profile-header">
+                <div class="profile-info">
+                    <div class="profile-avatar">
+                        <img src="../img/avatar-placeholder.png" alt="Avatar">
+                    </div>
+                    <div class="profile-details">
+                        <h1 id="userName">Nama Pengguna</h1>
+                        <p id="userEmail">email@example.com</p>
+                        <p id="joinDate">Bergabung sejak: -</p>
+                    </div>
+                </div>
+                <button class="button button-secondary" id="editProfileBtn">Edit Profil</button>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Level Diselesaikan</h3>
+                    <p class="stat-value" id="completedLevels">0/10</p>
+                    <p class="stat-label">Lanjutkan perjalananmu</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Poin</h3>
+                    <p class="stat-value" id="totalPoints">0</p>
+                    <p class="stat-label">Poin yang dikumpulkan</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Akurasi Rata-rata</h3>
+                    <p class="stat-value" id="avgAccuracy">0%</p>
+                    <p class="stat-label">Tingkat keberhasilan</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Badge Terkini</h3>
+                    <p class="stat-value" id="totalBadges">0</p>
+                    <p class="stat-label">Prestasi terukir</p>
+                </div>
+            </div>
+
+            <section class="achievements-section">
+                <h2>Pencapaian</h2>
+                <div class="achievements-grid" id="achievementsGrid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🌟</div>
+                        <p>Mulai Perjalanan</p>
+                        <span class="achievement-date">-</span>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🎯</div>
+                        <p>Level 5 Selesai</p>
+                        <span class="achievement-date">-</span>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🏆</div>
+                        <p>Master Challenge</p>
+                        <span class="achievement-date">-</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="level-history">
+                <h2>Riwayat Level</h2>
+                <div class="history-table" id="historyTable">
+                    <div class="history-header">
+                        <span>Level</span>
+                        <span>Skor Tertinggi</span>
+                        <span>Percobaan</span>
+                        <span>Tanggal</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="profile-actions">
+                <button class="button button-secondary" id="downloadReportBtn">Download Laporan</button>
+                <button class="button button-tertiary" id="deleteAccountBtn">Hapus Akun</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Quiz Kesiapan Kerja • Profil pengguna untuk monitoring progress pembelajaran.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/profil.js"></script>
+</body>
+</html>
