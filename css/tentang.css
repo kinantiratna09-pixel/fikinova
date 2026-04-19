@@ -20,20 +20,16 @@ body {
     color: var(--text-dark);
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle at top, rgba(154, 205, 235, 0.3), transparent 35%),
-                linear-gradient(180deg, #4a6fa5 0%, #3a5a8a 100%);
+    background: radial-gradient(circle at top, rgba(154, 205, 235, 0.3), transparent 35%), linear-gradient(180deg, #4a6fa5 0%, #3a5a8a 100%);
 }
 
 body::before {
     content: '';
     position: fixed;
     inset: 0;
-    background: radial-gradient(circle at top right, rgba(169, 214, 229, 0.25), transparent 20%),
-                radial-gradient(circle at bottom left, rgba(95, 168, 211, 0.15), transparent 18%),
-                radial-gradient(circle at center, rgba(255, 255, 255, 0.08), transparent 30%);
+    background: radial-gradient(circle at top right, rgba(169, 214, 229, 0.25), transparent 20%), radial-gradient(circle at bottom left, rgba(95, 168, 211, 0.15), transparent 18%), radial-gradient(circle at center, rgba(255, 255, 255, 0.08), transparent 30%);
     pointer-events: none;
 }
-
 
 .site-header {
     position: sticky;
@@ -88,14 +84,8 @@ body::before {
     align-items: center;
     justify-content: center;
     gap: 0.3rem;
-}
-
-.menu-toggle span {
-    display: block;
-    width: 24px;
-    height: 2.5px;
-    background: var(--text-dark);
-    border-radius: 999px;
+    font-size: 1.5rem;
+    color: var(--text-dark);
 }
 
 .nav .menu {
@@ -202,7 +192,6 @@ main {
         flex-direction: column;
         padding: 1rem;
     }
-
     .nav .menu {
         display: none;
         flex-direction: column;
@@ -216,49 +205,39 @@ main {
         padding: 1rem;
         border-radius: 0 0 8px 8px;
     }
-
     .menu.open {
         display: flex;
     }
-
     .menu-toggle {
         display: flex;
     }
-
     .nav .menu li {
         margin: 0.5rem 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
-
     .nav .menu li:last-child {
         border-bottom: none;
     }
-
     .nav .menu a {
         padding: 0.5rem 0;
         width: 100%;
         display: block;
     }
-
     .about-section {
         padding: 2rem 1rem;
         margin: 1rem;
         border-radius: 12px;
     }
-
     .about-section h1 {
         font-size: 2rem;
     }
-
     .cta-section {
         padding: 1.5rem;
     }
-
     .button-primary {
         width: 100%;
         max-width: 320px;
     }
-
     main {
         padding: 1rem;
     }
@@ -268,16 +247,13 @@ main {
     .site-header {
         padding: 0.85rem;
     }
-
     .about-section {
         padding: 1.5rem 1rem;
         margin: 0.75rem;
     }
-
     .about-section h1 {
         font-size: 1.8rem;
     }
-
     .about-content p,
     .cta-section p {
         font-size: 1rem;

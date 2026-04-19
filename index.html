@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,112 +8,116 @@
     <link rel="icon" type="image/png" href="img/logo.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="site-header">
-    
-    <div class="brand">
-        <img src="img/logo.png" alt="FIKINOVA Logo" class="brand-logo">
-        <div>
-            <h1>FIKINOVA</h1>
+
+        <div class="brand">
+            <img src="img/logo.png" alt="FIKINOVA Logo" class="brand-logo">
+            <div>
+                <h1>FIKINOVA</h1>
+            </div>
         </div>
-    </div>
-    <nav class="nav">
-        <ul class="menu">
-            <li><a href="index.html" data-page="beranda"><span class="menu-icon">🏠</span> Beranda</a></li>
-            <li><a href="pages/tentang.html" data-page="tentang"><span class="menu-icon">ℹ️</span> Tentang</a></li>
-            <li><a href="pages/materi.html" data-page="materi"><span class="menu-icon">📚</span> Materi</a></li>
-            <li><a href="pages/game.html" data-page="game"><span class="menu-icon">🎮</span> Game</a></li>
-            <li><a href="pages/profil.html" data-page="profil"><span class="menu-icon">👤</span> Profil</a></li>
-            <li><a href="pages/bantuan.html" data-page="bantuan"><span class="menu-icon">❓</span> Bantuan</a></li>
-        </ul>
-    </nav>
-    <button id="loginButton" class="button button-primary">Login</button>
-    <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html" data-page="beranda" class="active">Beranda</a></li>
+                <li><a href="pages/tentang.html" data-page="tentang">Tentang</a></li>
+                <li><a href="pages/materi.html" data-page="materi">Materi</a></li>
+                <li><a href="pages/game.html" data-page="game">Game</a></li>
+                <li><a href="pages/profil.html" data-page="profil">Profil</a></li>
+                <li><a href="pages/bantuan.html" data-page="bantuan">Bantuan</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button id="loginButton" class="button button-primary">Login</button>
+            <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        </div>
     </header>
 
     <div class="menu-overlay"></div>
 
     <main>
-    <section class="hero">
-        <div class="hero-copy">
-        <p class="eyebrow">Quiz Game</p>
-        <h2>FIKINOVA Career Simulator</h2>
-        <p>Inovasi game edukasi berbasis web yang dirancang untuk membantu remaja, khususnya siswa SMK, dalam mempersiapkan diri menghadapi dunia kerja melalui simulasi interaktif.</p>
-        <p>Siapkan diri, uji skill, dan raih peluang masa depan</p>
-        <div class="hero-actions">
-            <button id="heroLoginButton" class="button button-secondary">Masuk ke Login</button>
-            <a href="#detail" class="button button-tertiary">Lihat Detail</a>
-        </div>
-        </div>
-        <div class="hero-visual">
-        <img src="img/maskot.png" alt="Hero Image" class="hero-image">
-        <div class="decorative-circle circle-1"></div>
-        <div class="decorative-circle circle-2"></div>
-        </div>
-    </section>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Quiz Game</p>
+                <h2>FIKINOVA Career Simulator</h2>
+                <p>Selami dunia karier masa depan dengan simulasi edukatif yang memadukan materi, game, dan pengalaman interaktif.</p>
+                <p>Bangun skill profesionalmu sekarang, raih kepercayaan diri, dan jadikan setiap langkah persiapanmu bermakna.</p>
+                <div class="hero-actions">
+                    <button id="heroLoginButton" class="button button-secondary">Masuk ke Login</button>
+                    <a href="#detail" class="button button-tertiary">Lihat Detail</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="img/maskot.png" alt="Hero Image" class="hero-image">
+                <div class="decorative-circle circle-1"></div>
+                <div class="decorative-circle circle-2"></div>
+            </div>
+        </section>
 
-    <section id="detail" class="feature-grid">
-        <div class="section-header">
-        <p class="eyebrow">Fitur Unggulan</p>
-        <h2>Coba fitur-fitur unggulan yang kami sediakan</h2>
-        </div>
-        <div class="steps">
-            <article class="feature-card">
-                <h3>Materi Interaktif</h3>
-                <p>Belajar dengan materi yang menarik dan interaktif untuk meningkatkan pemahaman tentang kesiapan kerja.</p>
-            </article>
-            <article class="feature-card">
-                <h3>Game Edukatif</h3>
-                <p>Latih kemampuan dengan menggunakan studi kasus yang menarik.</p>
-            </article>
-            <article class="feature-card">
-                <h3>Progress Skill</h3>
-                <p>Pantau perkembangan skill kamu seiring berjalannya waktu.</p>
-            </article>
-        </div>
-    </section>
+        <section id="detail" class="feature-grid">
+            <div class="section-header">
+                <p class="eyebrow">Fitur Unggulan</p>
+                <h2>Coba fitur-fitur unggulan yang kami sediakan</h2>
+            </div>
+            <div class="steps">
+                <article class="feature-card">
+                    <h3>Materi Interaktif</h3>
+                    <p>Belajar dengan materi yang menarik dan interaktif untuk meningkatkan pemahaman tentang kesiapan kerja.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Game Edukatif</h3>
+                    <p>Latih kemampuan dengan menggunakan studi kasus yang menarik.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Progress Skill</h3>
+                    <p>Pantau perkembangan skill kamu seiring berjalannya waktu.</p>
+                </article>
+            </div>
+        </section>
 
-    <section class="how-it-works">
-        <div class="section-header">
-        <p class="eyebrow">Bagaimana Cara Ikut</p>
-        <h2>Langkah Mudah Menuju Quiz</h2>
-        </div>
-        <div class="steps">
-        <div class="step">
-            <span>1</span>
-            <h4>Login Akun</h4>
-            <p>Masuk ke halaman login untuk memulai sesi quiz di website kami.</p>
-        </div>
-        <div class="step">
-            <span>2</span>
-            <h4>Baca Materi</h4>
-            <p>Studi materi yang tersedia untuk memahami konsep-konsep kesiapan kerja.</p>
-        </div>
-        <div class="step">
-            <span>3</span>
-            <h4>Mulai Quiz</h4>
-            <p>Jawab pertanyaan dengan cepat dan cermat untuk meraih skor.</p>
-        </div>
-        </div>
-    </section>
+        <section class="how-it-works">
+            <div class="section-header">
+                <p class="eyebrow">Bagaimana Cara Ikut</p>
+                <h2>Langkah Mudah Menuju Quiz</h2>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <span>1</span>
+                    <h4>Login Akun</h4>
+                    <p>Masuk ke halaman login untuk memulai sesi quiz di website kami.</p>
+                </div>
+                <div class="step">
+                    <span>2</span>
+                    <h4>Baca Materi</h4>
+                    <p>Studi materi yang tersedia untuk memahami konsep-konsep kesiapan kerja.</p>
+                </div>
+                <div class="step">
+                    <span>3</span>
+                    <h4>Mulai Quiz</h4>
+                    <p>Jawab pertanyaan dengan cepat dan cermat untuk meraih skor.</p>
+                </div>
+            </div>
+        </section>
 
-    <section class="cta-banner">
-        <div>
-        <h2>Bergabung sekarang dan tingkatkan Soft Skill-mu.</h2>
-        <p>Waktu terbaik untuk mempersiapkan diri adalah sekarang. Ayo buktikan kemampuanmu dalam quiz ini!</p>
-        </div>
-        <button id="ctaLoginButton" class="button button-primary">Masuk Sekarang</button>
-    </section>
+        <section class="cta-banner">
+            <div>
+                <h2>Bergabung sekarang dan tingkatkan Soft Skill-mu.</h2>
+                <p>Waktu terbaik untuk mempersiapkan diri adalah sekarang. Ayo buktikan kemampuanmu dalam quiz ini!</p>
+            </div>
+            <button id="ctaLoginButton" class="button button-primary">Masuk Sekarang</button>
+        </section>
     </main>
 
     <footer class="site-footer">
-    <p>Quiz Kesiapan Kerja • Landing page dirancang untuk pengalaman belajar yang fokus dan nyaman.</p>
+        <p>Quiz Kesiapan Kerja • Landing page dirancang untuk pengalaman belajar yang fokus dan nyaman.</p>
     </footer>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
